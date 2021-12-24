@@ -1,4 +1,10 @@
-h4{text-align: center;
+/*Ngjyra e backgrroundit dhe margjinat */
+body{ 
+    background-color:rgb(102, 0, 0);
+    margin: auto; }
+ 
+/* Stilizimi i titujve te kolonave te footer-it*/
+ #Latest-work{text-align: center;
     font-size: 25px;
     font-weight: 200;
     color: white;
@@ -10,31 +16,29 @@ h4{text-align: center;
     padding: 3px;
     font-family: serif;
     border-radius: 8px;
+    margin-top: 30px;
  }
   
- body{ margin: auto}
-
- .Latest-work{margin: 0 270px 20px 270px ;
+/* Stilizimi i klases Latest-work (renditja e recetave te fundit ne nje grid 3x2, vendosja e tyre ne mes)*/
+ .Latest-work{margin-left: 220px;
+              margin-right: 270px;
+              margin-bottom: 35px;
               display: grid;
               grid-template-columns: auto auto auto;
               grid-gap: 20px;
               align-items: center;}
-
-
- body{ background-color:rgb(141, 19, 19);
-        }
-
-
+/*Caktimi i madhesise se imazheve te Latest Work sipas template-it*/
  .img{ width: 290px; 
        height: 190px;
        border: 3px solid white;
        margin-bottom: 10px; 
        position: relative;}
 
+/*Stilizimi i pseudoklases hover */
  .img:hover{border: 3px solid #7cc08d }
  .img:hover>.description {display:none;}
 
-
+/*Stilizimi i pershkrimit te recetave te fundit*/
  .description {  padding:5px;
                  background-color:rgb(50, 50, 50);
                  color: white; position: absolute; 
@@ -50,8 +54,8 @@ h4{text-align: center;
      text-align: center;
      display: flex;  
      justify-content: center; 
-     padding-left: 270px; 
-     padding-right: 270px;
+     padding-left: 220px; 
+     padding-right: 180px;
      padding-bottom: 20px;
      background-color: rgb(50, 50, 50);
      color: white;
@@ -102,7 +106,7 @@ h4{text-align: center;
      width:300px;
  }
 
- footer .last{ border-top: 2px solid rgb(0,0,0);
+ footer .last{ border-top: 2px solid rgb(20,20,20);
      background-color: rgb(35, 35, 35);
         position: relative;
         bottom: 0px;
@@ -124,3 +128,11 @@ h4{text-align: center;
  .column-3 p{color: rgb(150,150,150);
              margin-right: 20px ;}
  .column-3 p em{ color: #7cc08d}
+ b{color: rgb(90,90,90)}
+ .grey{color: rgb(150,150,150);}
+ .green{color: #7cc08d; text-align: left;}
+ a #green{color: #7cc08d; text-align: left; text-decoration: none; }
+ #green{color: #7cc08d;
+    text-align: right;}
+ #date{font-size: 13px;}
+ #admin{color: #7cc08d;}
