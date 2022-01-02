@@ -5,7 +5,7 @@
     list-style: none;
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    position: relative;
+    
 
 } 
 
@@ -81,7 +81,7 @@ ul li.active a{
     width:350px;
     padding-top: 100px;
 }
-.mySlides div h1,p{
+.mySlides h1,p{
     color:white;
 }
 
@@ -135,3 +135,39 @@ ul li.active a{
   main{
     padding:0px 120px;
 }
+
+/* cardsssssss */
+
+.cards-wrapper{
+    background-color: rgb(102,0,0);
+    display: flex;
+    justify-content: space-around;
+    text-align:  center;
+    padding: 70px 120px;
+    cursor: pointer;
+    gap:23px;
+    
+}
+.cards-wrapper p{
+    color: rgb(169,169,169);
+    padding-top: 20px;
+}
+
+.card{
+    background-color: white;
+    padding: 20px;
+    width: 23%;
+    height: 305px; 
+}
+
+.cards-wrapper >div:hover{
+    background-color:rgb(118,195,143);
+    color: white !important;
+}
+
+.card h1{
+    font-size: 28px;
+    font-weight: 520;
+    color: rgb(51,51,51);
+}
+

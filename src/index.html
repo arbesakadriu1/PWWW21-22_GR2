@@ -7,7 +7,6 @@
         <title>Restaurant Website</title>
         <link rel="stylesheet" href="index.css" type="text/css">
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script  src="index.js" tyoe="text/javascript"> </script>
     
 
     </head>
@@ -29,75 +28,149 @@
                </ul>     
             </nav>
         </header>
-        <div class="slideshow-container">
-           
-                <div class="mySlides fade">
-                    <div class="content">
-                        <h1>Pizza</h1>
-                        <p>Contrary to popular belief Lorem Ipsum  Lorem Ipsum is not simply random text. 
-                            It has roots in a piece of classical Latin literature 45 BC, making it over 2000 years old.
-                        </p>
-                    </div>
-                    <img src="../img/pizza.png" width="380px" height="380">
-                </div>
-                <div class="mySlides fade">
-                    <div class="content">
-                        <h1>Chicken</h1>
-                        <p>Contrary to popular belief Lorem Ipsum  , Lorem Ipsum is not simply random text. 
-                            It has roots in a piece of classical Latin trom 45 BC,making it over 2000 years old.
-                        </p>
-                    </div>
-                    <img src="../img/chicken.png" width="380px" height="380">
-                </div>
-                <div class="mySlides fade">
-                    <div class="content">
-                        <h1>Pasta</h1>
-                        <p>Contrary to popular belief Lorem Ipsum , Lorem Ipsum is not simply random text. 
-                            It has roots in a piece of classical Latin literature C, making it over 2000 years old.
-                        </p>
-                    </div>
-                    <img src="../img/pasta.png" width="380px" height="380">
-                </div>
-                <div class="mySlides fade">
-                    <div class="content">
-                        <h1>Salmon Salad</h1>
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
-                            It has roots in a piece of classical Latin literature from 45 BC, making.
-                        
-                        </p>
-                    </div>
-                    <img src="../img/salmon.png" width="380px" height="380">
-
-                </div>
-                <div class="mySlides fade">
-                    <div class="content">
-                        <h1>Salmon Salad</h1>
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
-                            It has roots in a piece of classical Latin literature from 45 BC, making.
-                        
-                        </p>
-                    </div>
-                    <img src="../img/salmon.png" width="380px" height="380">
-
-                </div>
-
-                <a class="next" onclick="plusSlides(-1)">&#8250;</a>
-                <a class="prev" onclick="plusSlides(-1)">&#8249; </a>
-    
-           
-        </div>
-
+      
         <main>
-            <div class="cards">
-                <div class="c1">
-                    <img src="../img/chinesefood.jpg" alt="chf">
-                    <h2>Chinese Food</h2>
-                    <p></p>
-                </div>
-            </div>
-        </main>
-             
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<div class="wrapper">
+						<div class="content">
+							<h1>Pizza</h1>
+							<p>
+								Contrary to popular belief Lorem Ipsum Lorem Ipsum is not simply
+								random text. It has roots in a piece of classical Latin literature
+								45 BC, making it over 2000 years old.
+							</p>
+							<button class="more-button">Read More Here</button>
+						</div>
+						<div>
+							<div class="content-image">
+								<img src="../img/pizza.png" width="380px" height="380" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mySlides fade">
+					<div class="wrapper">
+						<div class="content">
+							<h1>Chicken</h1>
+							<p>
+								Contrary to popular belief Lorem Ipsum , Lorem Ipsum is not simply
+								random text. It has roots in a piece of classical Latin trom 45
+								BC,making it over 2000 years old.
+							</p>
+							<button class="more-button">Read More Here</button>
+						</div>
+						<div class="content-image">
+							<img src="../img/chicken.png" />
+						</div>
+					</div>
+				</div>
+				<div class="mySlides fade">
+					<div class="wrapper">
+						<div class="content">
+							<h1>Pasta</h1>
+							<p>
+								Contrary to popular belief Lorem Ipsum , Lorem Ipsum is not simply
+								random text. It has roots in a piece of classical Latin literature
+								C, making it over 2000 years old.
+							</p>
+							<button class="more-button">Read More Here</button>
+						</div>
+						<div class="content-image">
+							<img src="../img/pasta.png" width="380px" height="380" />
+						</div>
+					</div>
+				</div>
+				<div class="mySlides fade">
+					<div class="wrapper">
+						<div class="content">
+							<h1>Salmon Salad</h1>
+							<p>
+								Contrary to popular belief, Lorem Ipsum is not simply random text.
+								It has roots in a piece of classical Latin literature from 45 BC,
+								making.
+							</p>
+							<button class="more-button">Read More Here</button>
+						</div>
+						<div class="content-image">
+							<img src="../img/salmon.png" />
+						</div>
+					</div>
+				</div>
+				<div class="mySlides fade">
+					<div class="wrapper">
+						<div class="content">
+							<h1>Salmon Salad</h1>
+							<p class="description">
+								Contrary to popular belief, Lorem Ipsum is not simply random text.
+								It has roots in a piece of classical Latin literature from 45 BC,
+								making.
+							</p>
+						
+							<button class="more-button">Read More Here</button>
+						</div>
+						<div class="content-image">
+							<img src="../img/salmon.png" />
+						</div>
+					</div>
+				</div>
+	
+				<a class="next" onclick="plusSlides(-1)">&#8250;</a>
+				<a class="prev" onclick="plusSlides(1)">&#8249; </a>
+			</div>
   
+    </main>
 
+            <div class="cards-wrapper">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../img/chinesefood.jpg" alt="chf" width="120px" height="120px">
+                    </div>
+                    <div class="card-content">
+                            <h1>CHINESE <br> FOOD</h1>  
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply <br> random text. 
+                                It has roots </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../img/chinesefood.jpg" alt="chf" width="120px" height="120px">
+                    </div>
+                     <div class="card-content">
+                            <h1>CHINESE <br> FOOD</h1>  
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply <br> random text. 
+                                It has roots </p>
+                     </div>
+                       
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../img/chinesefood.jpg" alt="chf" width="120px" height="120px">
+                    </div>
+                    <div class="card-content">
+                        <h1>CHINESE <br> FOOD</h1>  
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply <br> random text. 
+                                It has roots </p>
+                    </div>
+                       
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../img/chinesefood.jpg" alt="chf" width="120px" height="120px">
+                    </div>
+
+                     <div class="card-content">
+                        <h1>CHINESE <br> FOOD</h1>  
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply <br> random text. 
+                                It has roots </p>
+                    </div>
+                </div>
+
+            </div>
+
+              
+        
     </body>
+    <script  src="index.js" typee="text/javascript"> </script>
+
 </html>
