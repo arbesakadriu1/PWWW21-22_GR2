@@ -70,6 +70,7 @@
 
 .dish{
     min-height: 100vh;
+ 
 }
 
 .dish .controls{
@@ -84,16 +85,18 @@
 .dish .controls .buttons{
     margin:1rem 2rem;
     padding:.5rem 0;
-    border-bottom:.2rem solid rgb(190, 38, 38);
+    border-bottom:.2rem solid #333;
     color:#333;
     cursor: pointer;
     font-size: 2rem;
 }
-
-.dish .controls .buttons.button-active,
+/* Controls when are active and hover */
+.dish .controls .buttons.button-active{
+    color:rgb(190, 38, 38);
+    border-color: rgb(190, 38, 38);
+}
 .dish .controls .buttons:hover{
-    color:var(--red);
-    border-color: var(--red);
+    border-color: rgb(190, 38, 38);
 }
 
 .dish .image-container{
@@ -101,7 +104,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 0 50px;
+    /* padding: 0 50px; */
     padding-bottom: 2rem;
 }
 

@@ -1,7 +1,8 @@
 // Ju jep ngjyre linqeve ne nav kur te jene aktive
-$(document).on("click", "ul li", function () {
-    $(this).addClass("active").siblings().removeClass("active");
-  });
+$('.nav-ul .nav-link').click(function () {
+  $(this).addClass("active").siblings().removeClass("active");
+});
+
   var slideIndex = 1;
   showSlides(slideIndex);
   
