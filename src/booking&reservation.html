@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekti ne WWW</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="order.css" type="text/css">
+</head>
+<body style="background-color: white;">
+
+    <header>
+        <!-- Logo ose tekst ose img-->
+        <div class="logo">
+         <label class="big-text">House of Cuisines</label> 
+        </div>
+        
+        <nav class="navbar">
+           <ul>
+               <li><a href="#home" class="active home">HOME</a></li>
+               <li><a href="#" class="active">MENU </a></li>
+               <li> <a href="#" class="active">ORDER</a></li>
+               <li>  <a href="#" class="active">ABOUT US</a></li>
+               <li><a href="#"class="active"> GALLERY</a></li>
+               <li> <a href="#" class="active">LOG IN/SIGN UP</a></li>
+           </ul>     
+        </nav>
+    </header>   
+
+<div class="booking-form">
+<form method = "post" action = "" id = "booking-form">
+<fieldset>
+    <legend>Book a table</legend>
+
+<div class="res_time">
+<label>Choose time:</label>	<br/>
+<select id="reservation_time" name="reservation_time" s">
+
+                <option value="11:30 AM" >11:30 AM</option>
+    
+                <option value="11:45 AM" >11:45 AM</option>
+    
+                <option value="12:00 PM" >12:00 PM</option>
+    
+                <option value="12:15 PM" >12:15 PM</option>
+    
+                <option value="12:30 PM" >12:30 PM</option>
+    
+                <option value="12:45 PM" >12:45 PM</option>
+    
+                <option value="01:00 PM" >01:00 PM</option>
+    
+                <option value="01:15 PM" >01:15 PM</option>
+    
+                <option value="01:30 PM" >01:30 PM</option>
+    
+                <option value="01:45 PM" >01:45 PM</option>
+    
+                <option value="02:00 PM" >02:00 PM</option>
+    
+                <option value="02:15 PM" >02:15 PM</option>
+    
+                <option value="02:30 PM" >02:30 PM</option>
+    
+                <option value="02:45 PM" >02:45 PM</option>
+    
+                <option value="03:00 PM" >03:00 PM</option>
+    
+                <option value="03:15 PM" >03:15 PM</option>
+    
+                <option value="03:30 PM" >03:30 PM</option>
+    
+                <option value="03:45 PM" >03:45 PM</option>
+    
+                <option value="04:00 PM" >04:00 PM</option>
+    
+                <option value="04:15 PM" >04:15 PM</option>
+    
+                <option value="04:30 PM" >04:30 PM</option>
+    
+                <option value="04:45 PM" >04:45 PM</option>
+    
+                <option value="05:00 PM" >05:00 PM</option>
+    
+                <option value="05:15 PM" >05:15 PM</option>
+    
+                <option value="05:30 PM" >05:30 PM</option>
+    
+                <option value="05:45 PM" >05:45 PM</option>
+    
+                <option value="06:00 PM" >06:00 PM</option>
+    
+                <option value="06:15 PM" >06:15 PM</option>
+    
+                <option value="06:30 PM" >06:30 PM</option>
+    
+                <option value="06:45 PM" >06:45 PM</option>
+    
+                <option value="07:00 PM" >07:00 PM</option>
+    
+                <option value="07:15 PM" >07:15 PM</option>
+    
+                <option value="07:30 PM" >07:30 PM</option>
+    
+                <option value="07:45 PM" >07:45 PM</option>
+    
+                <option value="08:00 PM" >08:00 PM</option>
+    
+                <option value="08:15 PM" >08:15 PM</option>
+    
+                <option value="08:30 PM" >08:30 PM</option>
+    
+                <option value="08:45 PM" >08:45 PM</option>
+    
+                <option value="09:00 PM" >09:00 PM</option>
+    
+                <option value="09:15 PM" >09:15 PM</option>
+    
+                <option value="09:30 PM" >09:30 PM</option>
+    
+                <option value="09:45 PM" >09:45 PM</option>
+    
+                <option value="10:00 PM" >10:00 PM</option>
+    
+                <option value="10:15 PM" >10:15 PM</option>
+    
+                <option value="10:30 PM" >10:30 PM</option>
+    
+                <option value="10:45 PM" >10:45 PM</option>
+    
+
+</select>
+
+</div>
+
+<div res_nr>
+<label>Party size:</label><br/>
+
+<input type="radio"  name="nr" value="1">
+ <label for="1">1</label>
+ <input type="radio"  name="nr" value="2">
+ <label for="1">2</label>
+ <input type="radio"  name="nr" value="3">
+ <label for="1">3</label>
+ <input type="radio"  name="nr" value="4">
+ <label for="1">4</label>
+ <input type="radio"  name="nr" value="5">
+ <label for="1">5</label>
+ <input type="radio"  name="nr" value="6">
+ <label for="1">6</label>
+
+</div>
+
+<div class="res_date">
+<label for="res_date">Date:</label><br/>
+<input type="date" id="res_date" name="res_date">
+
+</div>
+
+<p><input id = "check_availibilty" type = "submit" value="Check availibilty" style="background-color: #7cc08d; border: none; color: 
+               rgb(50, 50, 50);"></p>
+
+</div>
+</fieldset>
+ </form>
+<fieldset>
+    <legend>Order now</legend>
+ <form method = "post" action = "" id = "order-form">
+    <table class="soup"> 
+        <tr >
+        <td rowspan="10"> <img src="../src/images/soup.png"> <br/>Soup</td>
+        <td ><input type="checkbox" id="1" name = "1"></td>
+        <td >Facebook</td>
+        <td id = "price">10.0</td>
+        </tr>
+
+        <tr><td colspan="2"></td><td><span style="padding-right: 10px;">Quantity</span><span><input type="number" min="1" max="10"></span></td> </tr>
+
+           
+</table>
+     <table id="pizza"> 
+             <tr >
+             <td rowspan="10"> <img src="../src/images/pizza2.jpg" width="100" height="100"> <br/>Pizza</td>
+             <td ><input type="checkbox" id="1" name = "1"></td>
+             <td >Facebook</td>
+             <td id = "price" >15.0</td>
+             </tr>
+
+             <tr><td colspan="2"></td><td><span style="padding-right: 10px;">Quantity</span><span><input type="number" min="1" max="10"></span></td> </tr>
+
+             
+         
+     </table>
+     
+     <table class= "sandwich"> 
+             <tr >
+             <td rowspan="10"><img src="../src/images/sandwich.png"> <br/>Sandwiches</td>
+             <td ><input type="checkbox" id="1" name = "1"></td>
+             <td >Facebook</td>
+             <td>10.0€</td>
+             </tr>
+
+             <tr><td colspan="2"></td><td><span style="padding-right: 10px;">Quantity</span><span><input type="number" min="1" max="10"></span></td> </tr>
+
+             
+         
+     </table>
+
+     <table class = "specialities"> 
+        <tr >
+        <td rowspan="10"> <img src="../src/images/specialities.png"> <br/>Specialities</td>
+        <td ><input type="checkbox" id="1" name = "1"></td>
+        <td >Facebook</td>
+        <td>10.0€</td>
+        </tr>
+
+        <tr><td colspan="2"></td><td><span style="padding-right: 10px;">Quantity</span><span><input type="number" min="1" max="10"></span></td> </tr>
+
+        </table>
+
+        <table class = "salad"> 
+            <tr >
+            <td rowspan="10"> <img src="../src/images/salad.png"> <br/>Salads</td>
+            <td ><input type="checkbox" id="1" name = "1"></td>
+            <td >Facebook</td>
+            <td>10.0€</td>
+            </tr>
+    
+            <tr><td colspan="2"></td><td><span style="padding-right: 10px;">Quantity</span><span><input type="number" min="1" max="10"></span></td> </tr>
+    
+            </table>
+            <table class = "cake"> 
+                <tr >
+                <td rowspan="10"> <img src="../src/images/cake.png"> <br/>Dessert</td>
+                <td ><input type="checkbox" id="1" name = "1"></td>
+                <td >Facebook</td>
+                <td>10.0€</td>
+                </tr>
+        
+                <tr><td colspan="2"></td><td><span style="padding-right: 10px;">Quantity</span><span><input type="number" min="1" max="10"></span></td> </tr>
+        
+                </table>
+
+                <table class = "drink"> 
+                    <tr >
+                    <td rowspan="10"> <img src="../src/images/drink.png"> <br/>Drinks</td>
+                    <td ><input type="checkbox" id="1" name = "1"></td>
+                    <td >Facebook</td>
+                    <td>10.0€</td>
+                    </tr>
+            
+                    <tr><td colspan="2"></td><td><span style="padding-right: 10px;">Quantity</span><span><input type="number" min="1" max="10"></span></td> </tr>
+            
+                    </table>
+
+     <table>
+         <th>Payment method</th>
+         <tr>
+             <td><input type="radio" id="1" name = "pagesa"></td>
+             <td>Cash on delivery/pick-up</td>
+         </tr>
+         <tr>
+            <td><input type="radio" id="creditcard" name = "pagesa" ></td>
+            <td>Credit-Card</td>
+        </tr>
+     </table>
+     <button onclick="myFunction()">Finish order</button>
+    </fieldset>
+ </form>
+
+ <script>
+         function myFunction(){ window.location.href("http://www.google.com"); }
+ </script>
+
+ 
+</body>
+
+</html>
