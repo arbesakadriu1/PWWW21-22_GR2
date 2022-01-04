@@ -1,5 +1,6 @@
 /*Ngjyra e backgrroundit dhe margjinat */
 *{font-family: Georgia, "Times New Roman", Times, serif;}
+
 body{ 
     background-color:rgb(102, 0, 0);
     margin: auto;
@@ -8,10 +9,10 @@ body{
 h4::before {
     content: "";
     display: block;
-    width: 350px;
+    width: 452px;
     height: 2px;
     background: rgb(50, 50, 50);
-    left: 222px;
+    left: 120px;
     top: 7%;
     position: absolute;
   }
@@ -19,10 +20,10 @@ h4::before {
   h4::after {
     content: "";
     display: block;
-    width: 363px;
+    width: 380px;
     height: 2px;
     background: rgb(50, 50, 50);
-    right: 207px;
+    right: 160px;
     top: 7%;
     position: absolute;
   }
@@ -45,12 +46,12 @@ h4::before {
   
 /* Stilizimi i klases Latest-work (renditja e recetave te fundit ne nje grid 3x2, vendosja e tyre ne mes)*/
  .Latest-work{/*margin-left: 220px;
-              margin-right: 220px;
-              margin-bottom: 35px;*/
+              margin-right: 220px;*/
+              margin-bottom: 35px;
               padding: 0px 120px;
               display: grid;
               grid-template-columns: auto auto auto;
-              grid-gap: 20px;
+              grid-gap: 50px;
               align-items: center;}
 /*Caktimi i madhesise se imazheve te Latest Work sipas template-it*/
  .img{ width: 290px; 
@@ -79,8 +80,8 @@ h4::before {
      text-align: center;
      display: flex;  
      justify-content: center; 
-     padding-left: 220px; 
-     padding-right: 180px;
+     padding-left: 120px; 
+     padding-right: 120px;
      padding-bottom: 20px;
      background-color: rgb(50, 50, 50);
      color: white;
@@ -146,39 +147,78 @@ h4::before {
 
  }
 
- .column-2 p{border-bottom: 1px solid rgb(90,90,90);
-             margin-right: 20px; }
+ .column-2 p{
+     border-bottom: 1px solid rgb(90,90,90);
+     margin-right: 20px;
+     }
 
- .column-3 p{color: rgb(150,150,150);
-             margin-right: 20px ;}
- .column-3 p em, i{ color: #7cc08d}
- b{color: rgb(90,90,90)}
- .grey{color: rgb(150,150,150);}
- .green{color: #7cc08d; text-align: left;}
- a #green{color: #7cc08d; text-align: left; text-decoration: none; }
- #green{color: #7cc08d;
-    text-align: right;}
+ .column-3 p{
+     color: rgb(150,150,150);
+     margin-right: 20px ;           
+     font-size: 16px;}
+
+ .column-3 p em, i{ 
+     color: #7cc08d;
+}
+ b{
+     color: rgb(90,90,90);
+    }
+
+ .grey{
+     color: rgb(150,150,150);
+    }
+
+ .green{
+     color: #7cc08d;
+     text-align: left;
+    }
+
+ a #green{
+     color: #7cc08d; 
+     text-align: left; 
+     text-decoration: none; 
+    }
+    
+ #green{
+    color: #7cc08d;
+    text-align: right;
+}
+
  #date{font-size: 13px;}
+
  #admin{color: #7cc08d;}
 
- fieldset{background-color: white;
-        border-radius: 8px;
-        margin:auto;
-        max-width:530px;
-        border:2px solid rgb(190,38 , 38);
-       display: grid;
-       grid-template-columns: auto auto auto;
-       align-items: center;
-       font-size:15px;
-        }
+ fieldset{
+     background-color: white;
+     border-radius: 8px;
+     margin:auto;
+     max-width:530px;
+     border:2px rgb(190,38 , 38);
+     display: grid;
+     grid-template-columns: auto auto auto;
+     align-items: center;
+     font-size:15px;
+    }
 
 .res_date{padding-left: 40px;}
+
 #order-fieldset{max-width: 400px;}
 
-legend{background-color: #7cc08d;  color: rgb(90,90,90);
-       padding: 7px; border-radius: 8px;}
+legend{
+    background-color: #7cc08d; 
+    color: rgb(90,90,90);
+    padding: 7px; 
+    border-radius: 8px;
+}
 
-#check_availibilty{position: relative;
-                   left: 390px;}
+#check_availibilty{
+    position: relative;
+    left: 390px;}
 
-select, input{ background-color: rgb(180,180,180);   border-top-color:lightgrey; border-left-color: lightgrey; border-radius: 8px; outline: none; }
+select, input{ 
+    background-color: rgb(180,180,180);   
+    border-top-color:lightgrey; 
+    border-left-color: lightgrey; 
+    border-radius: 8px; 
+    outline: none; 
+    outline-offset: 2px; }

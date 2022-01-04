@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     line-height: 47px;
-    border-top: 2px solid #76c38f;
+    border-top: 2px solid #7cc38d;
   }
   .logo span {
     line-height: 0px;
@@ -52,21 +52,62 @@
   fieldset{background-color: white;
     border-radius: 8px;
     margin:auto;
-    max-width:530px;
+    max-width:900px;
     border:2px solid rgb(190,38 , 38);
-   display: grid;
-   grid-template-columns: auto auto auto;
-   align-items: center;
-   font-size:15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    font-size:15px;
     }
 
-.res_date{padding-left: 40px;}
-#order-fieldset{max-width: 400px;}
+.res_date{
+    padding-left: 40px;
+}
 
-legend{background-color: #7cc08d; font-family: 'Times New Roman', Times, serif; color: rgb(90,90,90);
-   padding: 7px; border-radius: 8px;}
+#order-fieldset{
+    max-width: 400px;
+}
 
-#check_availibilty{position: relative;
-               left: 390px;}
+legend{
+    background-color: #7cc08d; 
+    font-family: 'Times New Roman', Times, serif; 
+    color: rgb(90,90,90);
+    padding: 7px; 
+    border-radius: 8px;}
 
-select, input{ background-color: rgb(180,180,180);   border-top-color:lightgrey; border-left-color: lightgrey; border-radius: 8px; outline: none; font-family: 'Times New Roman', Times, serif; }
+#check_availibilty{
+    position: relative;
+    left: 390px;
+    padding:8px;
+}
+#button{
+    background-color: #7cc08d;
+    border-radius: 8px;
+    padding: 8px;
+    
+}
+
+select, input{    
+    border-top-color:lightgrey; 
+    border-left-color: lightgrey; 
+    border-radius: 8px; 
+    outline: none; 
+}
+
+.space{ 
+    padding: 10px 30px;
+}
+
+.soup, .pizza, .specialities, .salad, .cake, .drinks, .payment{ 
+    width:50%;
+    float:left;
+    padding:20px;
+}
+
+.res-button{
+    padding: 10px;
+    text-align: center;
+}
+table{border: 1px solid #7cc08d;}
+
+.colored-cell{background-color: #7cc08d;}

@@ -30,7 +30,7 @@
 
 <div class="booking-form">
 <form method = "post" action = "" id = "booking-form">
-<fieldset>
+<fieldset id="first-fieldset"style="border-style: dashed;">
     <legend>Book a table</legend>
 
 <div class="res_time">
@@ -158,103 +158,422 @@
 
 </div>
 
-<p><input id = "check_availibilty" type = "submit" value="Check availibilty" style="background-color: #7cc08d; border: none; color: 
+<div class="res-button">
+<p><input id = "check_availibilty" type = "submit" value="Book table" style="background-color: #7cc08d; border: none; color: 
                rgb(50, 50, 50);"></p>
+               
+</div>
 
 </div>
 </fieldset>
  </form>
-<fieldset>
+<fieldset style="border-style:dotted ;">
     <legend>Order now</legend>
  <form method = "post" action = "" id = "order-form">
-    <table class="soup"> 
-        <tr >
-        <td rowspan="10"> <img src="../src/images/soup.png"> <br/>Soup</td>
-        <td ><input type="checkbox" id="1" name = "1"></td>
-        <td >Facebook</td>
-        <td id = "price">10.0</td>
-        </tr>
-
-        <tr><td colspan="2"></td><td><span style="padding-right: 10px;">Quantity</span><span><input type="number" min="1" max="10"></span></td> </tr>
-
-           
 </table>
-     <table id="pizza"> 
-             <tr >
-             <td rowspan="10"> <img src="../src/images/pizza2.jpg" width="100" height="100"> <br/>Pizza</td>
-             <td ><input type="checkbox" id="1" name = "1"></td>
-             <td >Facebook</td>
-             <td id = "price" >15.0</td>
-             </tr>
 
-             <tr><td colspan="2"></td><td><span style="padding-right: 10px;">Quantity</span><span><input type="number" min="1" max="10"></span></td> </tr>
+<form method = "post" action = "" id = "order-form">
+<div class="float">
+    <div class="soup">
+    <table cellspacing = "10px" cellpadding = "2px"> 
+        <tr>
+            <td class="colored-cell" rowspan="12"><img src="../src/images/soup.png"><br/>Soup</td>
+            <td><input type="checkbox" id="1" name = "1"></td>
+            <td>Lentil Soup</td>    
+            <td>2$ <marked>(Price for one)</marked></td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td><input type="number" min="1" max="10"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="1" name = "1"></td>
+            <td>Tomato Soup</td>    
+            <td>3$<marked>(Price for one)</marked></td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td><input type="number" min="1" max="10"></td>
+        </tr>
+        
+    
+        <tr>
+            <td><input type="checkbox" id="1" name = "1"></td>
+            <td>Italian Soup</td>    
+            <td>4$<marked>(Price for one)</marked></td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td><input type="number" min="1" max="10"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="1" name = "1"></td>
+            <td>Chicken Soup</td>    
+            <td>5$<marked>(Price for one)</marked></td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td><input type="number" min="1" max="10"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="1" name = "1"></td>
+            <td>Chinese Soup</td>    
+            <td>6$<marked>(Price for one)</marked></td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td><input type="number" min="1" max="10"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="1" name = "1"></td>
+            <td>Cream Soup</td>    
+            <td>7$<marked>(Price for one)</marked></td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td><input type="number" min="1" max="10"></td>
+        </tr>
+    </table>
+</div>
+<div class="pizza">
+<table cellspacing = "10px" cellpadding = "2px"> 
+    <tr>
+        <td class="colored-cell" rowspan="12"><img src="../src/images/pizza.png"><br/>Pizza</td>
+        <td><input type="checkbox" id="1" name = "1"></td>
+        <td>Neapolitan Pizza</td>    
+        <td>3$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="1" name = "1"></td>
+        <td>Greek Pizza</td>    
+        <td>3$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="1" name = "1"></td>
+        <td>Sicilian Pizza</td>    
+        <td>3$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="1" name = "1"></td>
+        <td>Detroit Pizza</td>    
+        <td>4$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="1" name = "1"></td>
+        <td>Californian Pizza</td>    
+        <td>4$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="1" name = "1"></td>
+        <td>St.Louis Pizza</td>    
+        <td>4$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    
+</table>
+</div>
+</div>
+    
+    
+</table>
+<div class="float">
+    <div class="specialities">
+<table  cellspacing = "10px" cellpadding = "2px"> 
+    <tr>
+        <td class="colored-cell" rowspan="12"><img src="../src/images/specialities.png"><br/>Specialities</td>
+        <td><input type="checkbox" id="1" name = "1"></td>
+        <td>Sushi</td>    
+        <td>20$<marked>(Price for one)</marked></td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="1" name = "1"></td>
+        <td>Tacos</td>    
+        <td>7$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="1" name = "1"></td>
+        <td>Burrito</td>    
+        <td>7$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="1" name = "1"></td>
+        <td>Beef Steak</td>    
+        <td>25$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="1" name = "1"></td>
+        <td>Chicken Breast</td>    
+        <td>12$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <td><input type="checkbox" id="1" name = "1"></td>
+        <td>Chicken Finger</td>    
+        <td>10$<marked>(Price for one)</marked></td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+   </table>
+</div>
+<div class = "salad">
+   <table  cellspacing = "10px" cellpadding = "2px"> 
+    <tr>
+        <td class="colored-cell" rowspan="12"><img src="../src/images/salad.png"><br/>Salad</td>
+        <td><input type="checkbox" id="1" name = "1"></td>
+        <td>Greek Salad</td>    
+        <td>4$<marked>(Price for one)</marked></td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="1" name = "1"></td>
+        <td>Thai Salad</td>    
+        <td>4$<marked>(Price for one)</marked></td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="1" name = "1"></td>
+        <td>Asian Salad</td>    
+        <td>4$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="1" name = "1"></td>
+        <td>Lobster Salad</td>    
+        <td>4$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="1" name = "1"></td>
+        <td>Tropical Salad</td>    
+        <td>2$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="1" name = "1"></td>
+        <td>Salmon Salad</td>    
+        <td>2$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
 
-             
-         
-     </table>
-     
-     <table class= "sandwich"> 
-             <tr >
-             <td rowspan="10"><img src="../src/images/sandwich.png"> <br/>Sandwiches</td>
-             <td ><input type="checkbox" id="1" name = "1"></td>
-             <td >Facebook</td>
-             <td>10.0€</td>
-             </tr>
-
-             <tr><td colspan="2"></td><td><span style="padding-right: 10px;">Quantity</span><span><input type="number" min="1" max="10"></span></td> </tr>
-
-             
-         
-     </table>
-
-     <table class = "specialities"> 
-        <tr >
-        <td rowspan="10"> <img src="../src/images/specialities.png"> <br/>Specialities</td>
-        <td ><input type="checkbox" id="1" name = "1"></td>
-        <td >Facebook</td>
-        <td>10.0€</td>
+       </table>
+    </div>
+</div>
+<div class = "float">
+    <div class = "cake">
+       <table  cellspacing = "10px" cellpadding = "2px"> 
+           <tr>
+            <td  class="colored-cell" rowspan="12"><img src="../src/images/cake.png"><br/>Dessert</td>
+            <td><input type="checkbox" id="1" name = "1"></td>
+            <td>Tiramisu</td>    
+            <td>3$<marked>(Price for one)</marked></td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td><input type="number" min="1" max="10"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="1" name = "1"></td>
+            <td>Brown Muffins</td>    
+            <td>4$<marked>(Price for one)</marked></td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td>Cherry cream</td>
+            <td>4$</td>
         </tr>
 
-        <tr><td colspan="2"></td><td><span style="padding-right: 10px;">Quantity</span><span><input type="number" min="1" max="10"></span></td> </tr>
-
-        </table>
-
-        <table class = "salad"> 
-            <tr >
-            <td rowspan="10"> <img src="../src/images/salad.png"> <br/>Salads</td>
-            <td ><input type="checkbox" id="1" name = "1"></td>
-            <td >Facebook</td>
-            <td>10.0€</td>
+        <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td><input type="number" min="1" max="10"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="1" name = "1"></td>
+            <td>Chessecake</td>    
+            <td>4$ (Price for one)</td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td><input type="number" min="1" max="10"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="1" name = "1"></td>
+            <td>Frozen desserts</td>    
+            <td>4 (Price for one)</td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td><input type="number" min="1" max="10"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="1" name = "1"></td>
+            <td>Baklava</td>    
+            <td>4$ (Price for one)</td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td><input type="number" min="1" max="10"></td>
+        </tr>
+   
+           </table>
+    </div>
+    <div class = "drink">
+           <table  cellspacing = "10px" cellpadding = "2px"> 
+            <tr>
+                <td  class="colored-cell" rowspan="12"><img src="../src/images/drink.png"><br/>Drinks</td>
+                <td><input type="checkbox" id="1" name = "1"></td>
+                <td>Sodas</td>    
+                <td>2$<marked>(Price for one)</marked></td> 
             </tr>
-    
-            <tr><td colspan="2"></td><td><span style="padding-right: 10px;">Quantity</span><span><input type="number" min="1" max="10"></span></td> </tr>
-    
-            </table>
-            <table class = "cake"> 
-                <tr >
-                <td rowspan="10"> <img src="../src/images/cake.png"> <br/>Dessert</td>
-                <td ><input type="checkbox" id="1" name = "1"></td>
-                <td >Facebook</td>
-                <td>10.0€</td>
-                </tr>
-        
-                <tr><td colspan="2"></td><td><span style="padding-right: 10px;">Quantity</span><span><input type="number" min="1" max="10"></span></td> </tr>
-        
-                </table>
-
-                <table class = "drink"> 
-                    <tr >
-                    <td rowspan="10"> <img src="../src/images/drink.png"> <br/>Drinks</td>
-                    <td ><input type="checkbox" id="1" name = "1"></td>
-                    <td >Facebook</td>
-                    <td>10.0€</td>
-                    </tr>
-            
-                    <tr><td colspan="2"></td><td><span style="padding-right: 10px;">Quantity</span><span><input type="number" min="1" max="10"></span></td> </tr>
-            
-                    </table>
-
-     <table>
+            <tr>
+                <td></td>
+                <td>Quantity</td>
+                <td><input type="number" min="1" max="10"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="1" name = "1"></td>
+                <td>Cocktails</td>    
+                <td>2$<marked>(Price for one)</marked></td> 
+            </tr>
+            <tr>
+                <td></td>
+                <td>Quantity</td>
+                <td><input type="number" min="1" max="10"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="1" name = "1"></td>
+                <td>Watermelon juice</td>    
+                <td>2$ (Price for one)</td> 
+            </tr>
+            <tr>
+                <td></td>
+                <td>Quantity</td>
+                <td><input type="number" min="1" max="10"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="1" name = "1"></td>
+                <td>Red Wine</td>    
+                <td>8$ (Price for one)</td> 
+            </tr>
+            <tr>
+                <td></td>
+                <td>Quantity</td>
+                <td><input type="number" min="1" max="10"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="1" name = "1"></td>
+                <td>White wine</td>    
+                <td>8$ (Price for one)</td> 
+            </tr>
+            <tr>
+                <td></td>
+                <td>Quantity</td>
+                <td><input type="number" min="1" max="10"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="1" name = "1"></td>
+                <td>Water</td>    
+                <td>1$ (Price for one)</td> 
+            </tr>
+            <tr>
+                <td></td>
+                <td>Quantity</td>
+                <td><input type="number" min="1" max="10"></td>
+            </tr>
+               </table>
+    </div>
+</div>
+<div class="payment">
+     <table >
          <th>Payment method</th>
          <tr>
              <td><input type="radio" id="1" name = "pagesa"></td>
@@ -262,18 +581,14 @@
          </tr>
          <tr>
             <td><input type="radio" id="creditcard" name = "pagesa" ></td>
-            <td>Credit-Card</td>
+            <td>Credit-Card </td>
         </tr>
      </table>
-     <button onclick="myFunction()">Finish order</button>
+    </div>
+     <button id = "button" >Finish order</button>
     </fieldset>
  </form>
-
- <script>
-         function myFunction(){ window.location.href("http://www.google.com"); }
- </script>
-
  
 </body>
-
+<script src = "order.js"></script>
 </html>
