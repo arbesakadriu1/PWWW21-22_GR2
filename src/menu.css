@@ -124,7 +124,7 @@
 
 
 .dish .image-container .image h1{
-    font-size: 2rem;
+    font-size: 25px;
     font-weight: normal;
     color:#333;
     padding:.5rem;
@@ -133,6 +133,7 @@
 .dish .image-container .image h1:hover{
     color:var(--red);
     text-decoration: underline;
+    cursor: pointer;
 }
 .dish-container{
     display: flex;
@@ -141,13 +142,15 @@
 }
 .dish-container h2{
     font-weight: normal;
-    padding-top: 12px;
+    padding-top: 11px;
     font-size: 22px;
 
 }
 .dish-container h2:hover{
     text-decoration: underline;
     color:rgb(190, 38, 38);
+    cursor: pointer;
+
 }
 
 /* .dish-container h2:hover{
