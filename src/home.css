@@ -36,6 +36,7 @@
     color: white;
     margin: 10px 20px;
     font-size: 15px;
+    text-transform: uppercase;
   }
   nav ul li a:hover {
     background-color: #76c38f;
@@ -83,12 +84,14 @@
     height: 390px;
   }
   
-  .content > p {
+  .content  p {
       padding-top: 10px;
       padding-bottom: 10px;
     width: 50%;
     font-style: normal;
+    word-break: normal;
   }
+
   .more-button {
     margin-top: 20px;
     background-color: #76c38f;

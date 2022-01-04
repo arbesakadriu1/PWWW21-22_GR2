@@ -121,6 +121,8 @@
     object-fit: cover;
 }
 
+
+
 .dish .image-container .image h1{
     font-size: 2rem;
     font-weight: normal;
@@ -132,3 +134,28 @@
     color:var(--red);
     text-decoration: underline;
 }
+.dish-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dish-container h2{
+    font-weight: normal;
+    padding-top: 12px;
+    font-size: 22px;
+
+}
+.dish-container h2:hover{
+    text-decoration: underline;
+    color:rgb(190, 38, 38);
+}
+
+/* .dish-container h2:hover{
+    
+opacity: 1;
+background: #e2a9e5;
+background: -moz-linear-gradient(-45deg, #e2a9e5 15%, #2b94e5 100%);
+background: -webkit-linear-gradient(-45deg, #e2a9e5 15%,#2b94e5 100%);
+background: linear-gradient(135deg, #e2a9e5 15%,#2b94e5 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2a9e5', endColorstr='#2b94e5',GradientType=1 );
+} */
