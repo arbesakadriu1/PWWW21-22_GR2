@@ -1,35 +1,257 @@
 /*Ngjyra e backgrroundit dhe margjinat */
-*{font-family: Georgia, "Times New Roman", Times, serif;}
+* {
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    position: relative;
+  }
 
+  header {
+    box-sizing: border-box;
+    background-color: rgb(40,0,0);
+    padding: 0px 120px;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 47px;
+    border-top: 2px solid #76c38f;
+    margin: 0px;
+  }
+
+  .logo{margin-top: 15px;}
+  
+  .logo span {
+    line-height: 0px;
+  }
+  
+  .big-text {
+    color: white;
+    font-size: 28px;
+    line-height: 70px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 70px;
+  }
+  nav ul li a {
+    color: white;
+    margin: 10px 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  nav ul li a:hover {
+    background-color: #76c38f;
+    border-radius: 8px;
+    padding: 10px 20px;
+  }
+  
+  ul li.active a {
+    background-color: #76c38f;
+    border-radius: 13px;
+    padding: 10px 20px;
+    transition: 0s;
+  }
+  
+  .slideshow-container {
+    background-color: rgb(40,0,0);
+    position: relative;
+  
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .mySlides {
+    /* max-width: 940px; /
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    / display: none; */
+  }
+  .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    margin: auto;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content-image > img {
+    width: 390px;
+    height: 390px;
+  }
+  .content h1{
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    font-size: 40px;
+  }
+  
+  .content  p {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    width: 50%;
+    font-style: normal;
+    word-break: break-all;
+  }
+
+  .more-button {
+    margin-top: 10px;
+    padding-top: 15px;
+    text-align: center;
+    background-color: #76c38f;
+    color: #fff;
+    height: 50px;
+    width: 160px;
+    border-radius: 13px;
+    font-size: 17px;
+  }
+  .more-button:hover{
+      border:1px solid #76c38f;
+      background-color: transparent;
+  }
+
+  
+  .mySlides >div{
+    color: white;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin-top: -22px;
+    margin-left: 180px;
+  
+    padding: 16px;
+    color: #76c38f;
+    font-weight: bold;
+    font-size: 32px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: 180px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+/* cardsssssss */
+
+.cards-wrapper{
+    background-color: rgb(102,0,0);
+    display: flex;
+    justify-content: space-around;
+    text-align:  center;
+    align-items: center;
+    padding: 70px 120px;
+    cursor: pointer;
+    gap:23px;
+    
+}
+
+
+.card{
+    background-color: white;
+    padding: 20px;
+    width: 23%;
+    height: 340px; 
+}
+/* .card-image{
+    width: 120px;
+    height: 120px;
+} */
+
+
+.card h1{
+    font-size: 28px;
+    font-weight: 520;
+    padding-top: 20px;
+} 
+
+
+.card:hover{
+    background-color:rgb(118,195,143);
+    color: white;
+}
+
+.card p{
+    /* color: rgb(169,169,169); */
+   padding-top: 20px;
+}
+
+  
 body{ 
     background-color:rgb(102, 0, 0);
-    margin: auto;
-    font-family: 'Times New Roman', Times, serif; }
+    margin: auto; }
 
 h4::before {
     content: "";
     display: block;
-    width: 452px;
+    width: 460px;
     height: 2px;
     background: rgb(50, 50, 50);
-    left: 120px;
-    top: 7%;
+    left: 200px;
+    top: 50%;
     position: absolute;
   }
   
   h4::after {
     content: "";
     display: block;
-    width: 380px;
+    width: 460px;
     height: 2px;
     background: rgb(50, 50, 50);
-    right: 160px;
-    top: 7%;
+    right: 200px;
+    top: 50%;
     position: absolute;
   }
  
 /* Stilizimi i titullit latest work*/
- #Latest-work{text-align: center;
+ #Latest-work{
+     text-align: center;
     font-size: 25px;
     font-weight: 200;
     color: white;
@@ -48,10 +270,11 @@ h4::before {
  .Latest-work{/*margin-left: 220px;
               margin-right: 220px;*/
               margin-bottom: 35px;
-              padding: 0px 120px;
+              padding-left: 120px;
+              padding-right: 70px;;
               display: grid;
               grid-template-columns: auto auto auto;
-              grid-gap: 50px;
+              grid-gap: 70px;
               align-items: center;}
 /*Caktimi i madhesise se imazheve te Latest Work sipas template-it*/
  .img{ width: 290px; 
@@ -74,25 +297,25 @@ h4::before {
                  text-align:center;}
 
 
-
+ /* Pjesa e footer-it me 4 kolona*/
  footer .upper{
      width: device-width;
      text-align: center;
      display: flex;  
      justify-content: center; 
      padding-left: 120px; 
-     padding-right: 120px;
+     padding-right: 50px;
      padding-bottom: 20px;
      background-color: rgb(50, 50, 50);
      color: white;
      font-size: 18px;
-     column-gap: 20px;
+     column-gap: 45px;
  }
 
  h3{ 
      font-weight: 100;}
 
- .column-1  a{
+ .column-1 a{
 
       text-decoration: none;
       color:rgb(150,150,150);
@@ -115,10 +338,7 @@ h4::before {
          
  }
 
- table td{
-       
-     padding: 5px;;
- }
+ 
 
  footer h3{
      text-align: left;
@@ -187,31 +407,8 @@ h4::before {
  #date{font-size: 13px;}
 
  #admin{color: #7cc08d;}
-
- fieldset{
-     background-color: white;
-     border-radius: 8px;
-     margin:auto;
-     max-width:530px;
-     border:2px rgb(190,38 , 38);
-     display: grid;
-     grid-template-columns: auto auto auto;
-     align-items: center;
-     font-size:15px;
-    }
-
-.res_date{padding-left: 40px;}
-
-#order-fieldset{max-width: 400px;}
-
-legend{
-    background-color: #7cc08d; 
-    color: rgb(90,90,90);
-    padding: 7px; 
-    border-radius: 8px;
-}
-
-#check_availibilty{
+ 
+ #check_availibilty{
     position: relative;
     left: 390px;}
 
@@ -222,3 +419,8 @@ select, input{
     border-radius: 8px; 
     outline: none; 
     outline-offset: 2px; }
+
+    .left, .right{ 
+        width:50%;
+        float:left;
+    }

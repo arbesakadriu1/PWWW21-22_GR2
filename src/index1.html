@@ -5,13 +5,155 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekti ne WWW</title>
-
+     
     <link rel="stylesheet" href="stilizimi.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
 </head>
 <body>
-    
+
+    <header>
+        <!-- Logo ose tekst ose img-->
+        <div class="logo">
+         <label class="big-text">House of Cuisines</label> 
+        </div>
+        
+         <nav class="navbar">
+            <ul class="nav-ul">
+                <li class="active nav-link"><a href="index1.html" >HOME</a></li>
+                <li class="nav-link"><a href="menu.html" >MENU </a></li>
+                <li class="nav-link"> <a href="booking&reservation.html" >ORDER</a></li>
+                <li class="nav-link">  <a href="#">ABOUT US</a></li>
+                <li class="nav-link"><a href="#"> GALLERY</a></li>
+                <li class="nav-link"> <a href="#">LOG IN/SIGN UP</a></li>
+            </ul>     
+         </nav>
+
+    </header>
+
+    <main>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="wrapper">
+                    <div class="content">
+                        <h1>Pizza</h1>
+                        <p>
+                        Pizza, dish of Italian, consisting of a flattened disk of bread dough
+                         topped with some combination of mozzarella or other.</p>
+                        <a class="more-button" href="menu.html">Go To Menu &#187;</a>
+                    </div>
+                        <div class="content-image">
+                            <img src="../img/pizza.png" />
+                        </div>
+                </div>
+            </div>
+       
+            <div class="mySlides fade">
+                <div class="wrapper">
+                    <div class="content">
+                        
+                        <h1 >Pasta</h1>
+                        <p>
+                            Pasta  is  made from an unleavened dough
+                             of wheat flour mixed with water or eggs,
+                             and formed into sheets or other shapes.
+                        </p>
+                        <a class="more-button" href="menu.html">Go To Menu &#187;</a>
+                    </div>
+                    <div class="content-image">
+                        <img src="../img/pasta.png"  />
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="wrapper">
+                    <div class="content">
+                        <h1>Salmon Salad</h1>
+                        <p>
+                            One of the easiest ways to get a healthy, wholesome weeknight meal without much effort is a big salad with a little protein. 
+                        </p>
+                        <a class="more-button" href="menu.html">Go To Menu &#187;</a>
+                    </div>
+                    <div class="content-image">
+                        <img src="../img/salmon.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="wrapper">
+                    <div class="content">
+                        <h1>Beef Steak</h1>
+                        <p class="description">
+                            A good steak is juicy, tender, loaded with flavor, 
+                            and has a minimum amount of fat.
+                             Lean is the cherry-red part of the meat
+                        </p>
+                    
+                        <a class="more-button" href="menu.html">Go To Menu &#187;</a>
+                    </div>
+                    <div class="content-image">
+                        <img src="../img/meat.png" />
+                    </div>
+                </div>
+            </div>
+
+            <a class="next" onclick="plusSlides(+1)">&#8250;</a>
+            <a class="prev" onclick="plusSlides(-1)">&#8249; </a>
+        </div>
+
+
+        <div class="cards-wrapper">
+            <div class="card">
+                <div class="card-image">
+                    <img src="../img/chinesefood.jpg" alt="chf" width="120px" height="120px">
+                </div>
+                <div class="card-content">
+                        <h1>CHINESE <br> FOODS</h1>  
+                        <p><abbr title="Chinese Food">CF</abbr> 
+                             is an important part of Chinese culture and includes cuisines originating from China. </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="../img/italian.jpg" alt="chf" width="120px" height="120px">
+                </div>
+                 <div class="card-content">
+                        <h1>ITALIAN<br> FOODS</h1>  
+                        <p>Italian cuisine is a Mediterranean cuisine consisting of the ingredients, 
+                            recipes and cooking </p>
+                 </div>
+                   
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="../img/mexicanfood.png" alt="chf" width="120px" height="120px">
+                </div>
+                <div class="card-content">
+                    <h1>MEXICAN <br> FOODS</h1>  
+                    <p>Mexican cuisine consists of the cooking cuisines and traditions of the modern country of Mexico </p>
+                </div>
+                   
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="../img/fastfood.PNG" alt="chf" width="120px" height="120px">
+                </div>
+
+                 <div class="card-content">
+                    <h1>FAST <br> FOODS</h1>  
+                    <p>Fast food is a type of mass-produced food designed for commercial resale   </p>
+                </div>
+            </div>
+
+        </div>
+        
+
+
+</main>
+
+        
   <div class="padding">
-   <div class="header"><h4 id = "Latest-work">Latest Work</h4></div>
+   <div ><h4 id = "Latest-work">Latest Work</h4></div>
 
     <section class="Latest-work">
 
@@ -92,10 +234,19 @@
     </div>
         <div class="last">
 
-            <p style = "padding-left: 120px;">Copyright &copy; 2021 PWWW-GR2 - All rights reserved</p>
+           <div class="left"> 
+               <p style = "padding-left: 120px;">Copyright &copy; 2021 PWWW-GR2 - All rights reserved</p> 
+           </div>
+           <div class="right">
+            <p id="DT"></p>
+        </div>
 
         </div>
     </footer>
 </div>
+<script>
+    document.getElementById("DT").innerHTML = Date();
+ </script>
 </body>
+
 </html>
