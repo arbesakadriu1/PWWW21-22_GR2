@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekti ne WWW</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="order.css" type="text/css">
+</head>
+<body style="background-color: white;">
+
+    <header>
+        <!-- Logo ose tekst ose img-->
+        <div class="logo">
+         <label class="big-text">House of Cuisines</label> 
+        </div>
+        
+        <nav class="navbar">
+           <ul>
+               <li><a href="#home" class="active home">HOME</a></li>
+               <li><a href="#" class="active">MENU </a></li>
+               <li> <a href="#" class="active">ORDER</a></li>
+               <li>  <a href="#" class="active">ABOUT US</a></li>
+               <li><a href="#"class="active"> GALLERY</a></li>
+               <li> <a href="#" class="active">LOG IN/SIGN UP</a></li>
+           </ul>     
+        </nav>
+    </header>   
+
+<div class="booking-form">
+<form method = "post" action = "" id = "booking-form">
+<fieldset id="first-fieldset"style="border-style: dashed;">
+    <legend>Book a table</legend>
+
+<div class="res_time">
+<label>Choose time:</label>	<br/>
+<select id="reservation_time" name="reservation_time" s">
+
+                <option value="11:30 AM" >11:30 AM</option>
+    
+                <option value="11:45 AM" >11:45 AM</option>
+    
+                <option value="12:00 PM" >12:00 PM</option>
+    
+                <option value="12:15 PM" >12:15 PM</option>
+    
+                <option value="12:30 PM" >12:30 PM</option>
+    
+                <option value="12:45 PM" >12:45 PM</option>
+    
+                <option value="01:00 PM" >01:00 PM</option>
+    
+                <option value="01:15 PM" >01:15 PM</option>
+    
+                <option value="01:30 PM" >01:30 PM</option>
+    
+                <option value="01:45 PM" >01:45 PM</option>
+    
+                <option value="02:00 PM" >02:00 PM</option>
+    
+                <option value="02:15 PM" >02:15 PM</option>
+    
+                <option value="02:30 PM" >02:30 PM</option>
+    
+                <option value="02:45 PM" >02:45 PM</option>
+    
+                <option value="03:00 PM" >03:00 PM</option>
+    
+                <option value="03:15 PM" >03:15 PM</option>
+    
+                <option value="03:30 PM" >03:30 PM</option>
+    
+                <option value="03:45 PM" >03:45 PM</option>
+    
+                <option value="04:00 PM" >04:00 PM</option>
+    
+                <option value="04:15 PM" >04:15 PM</option>
+    
+                <option value="04:30 PM" >04:30 PM</option>
+    
+                <option value="04:45 PM" >04:45 PM</option>
+    
+                <option value="05:00 PM" >05:00 PM</option>
+    
+                <option value="05:15 PM" >05:15 PM</option>
+    
+                <option value="05:30 PM" >05:30 PM</option>
+    
+                <option value="05:45 PM" >05:45 PM</option>
+    
+                <option value="06:00 PM" >06:00 PM</option>
+    
+                <option value="06:15 PM" >06:15 PM</option>
+    
+                <option value="06:30 PM" >06:30 PM</option>
+    
+                <option value="06:45 PM" >06:45 PM</option>
+    
+                <option value="07:00 PM" >07:00 PM</option>
+    
+                <option value="07:15 PM" >07:15 PM</option>
+    
+                <option value="07:30 PM" >07:30 PM</option>
+    
+                <option value="07:45 PM" >07:45 PM</option>
+    
+                <option value="08:00 PM" >08:00 PM</option>
+    
+                <option value="08:15 PM" >08:15 PM</option>
+    
+                <option value="08:30 PM" >08:30 PM</option>
+    
+                <option value="08:45 PM" >08:45 PM</option>
+    
+                <option value="09:00 PM" >09:00 PM</option>
+    
+                <option value="09:15 PM" >09:15 PM</option>
+    
+                <option value="09:30 PM" >09:30 PM</option>
+    
+                <option value="09:45 PM" >09:45 PM</option>
+    
+                <option value="10:00 PM" >10:00 PM</option>
+    
+                <option value="10:15 PM" >10:15 PM</option>
+    
+                <option value="10:30 PM" >10:30 PM</option>
+    
+                <option value="10:45 PM" >10:45 PM</option>
+    
+
+</select>
+
+</div>
+
+<div res_nr>
+<label>Party size:</label><br/>
+
+<input type="radio"  name="nr" value="1">
+ <label for="1">1</label>
+ <input type="radio"  name="nr" value="2">
+ <label for="1">2</label>
+ <input type="radio"  name="nr" value="3">
+ <label for="1">3</label>
+ <input type="radio"  name="nr" value="4">
+ <label for="1">4</label>
+ <input type="radio"  name="nr" value="5">
+ <label for="1">5</label>
+ <input type="radio"  name="nr" value="6">
+ <label for="1">6</label>
+
+</div>
+
+<div class="res_date">
+<label for="res_date">Date:</label><br/>
+<input type="date" id="res_date" name="res_date">
+
+</div>
+
+<div class="res-button">
+<p><input id = "check_availibilty" type = "submit" value="Book table" style="background-color: #7cc08d; border: none; color: 
+               rgb(50, 50, 50);"></p>
+               
+</div>
+
+</div>
+</fieldset>
+ </form>
+<fieldset style="border-style:dotted ;">
+    <legend>Order now</legend>
+ <form method = "post" action = "" id = "order-form">
+</table>
+
+<form method = "post" action = "" id = "order-form">
+<div class="float">
+    <div class="soup">
+    <table cellspacing = "10px" cellpadding = "2px"> 
+        <tr>
+            <td class="colored-cell" rowspan="12"><img src="../src/images/soup.png"><br/>Soup</td>
+            <td><input type="checkbox" id="s1" name = "s1"></td>
+            <td>Lentil Soup</td>    
+            <td>2$ <marked>(Price for one)</marked></td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td><input type="number" min="1" max="10"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="s2" name = "s2"></td>
+            <td>Tomato Soup</td>    
+            <td>3$<marked>(Price for one)</marked></td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td><input type="number" min="1" max="10"></td>
+        </tr>
+        
+    
+        <tr>
+            <td><input type="checkbox" id="s3" name = "s3"></td>
+            <td>Italian Soup</td>    
+            <td>4$<marked>(Price for one)</marked></td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td><input type="number" min="1" max="10"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="s4" name = "s4"></td>
+            <td>Chicken Soup</td>    
+            <td>5$<marked>(Price for one)</marked></td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td><input type="number" min="1" max="10"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="s5" name = "s5"></td>
+            <td>Chinese Soup</td>    
+            <td>6$<marked>(Price for one)</marked></td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td><input type="number" min="1" max="10"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="1" name = ""></td>
+            <td>Cream Soup</td>    
+            <td>7$<marked>(Price for one)</marked></td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td><input type="number" min="1" max="10"></td>
+        </tr>
+    </table>
+</div>
+<div class="pizza">
+<table cellspacing = "10px" cellpadding = "2px"> 
+    <tr>
+        <td class="colored-cell" rowspan="12"><img src="../src/images/pizza.png"><br/>Pizza</td>
+        <td><input type="checkbox" id="p1" name = "p1"></td>
+        <td>Neapolitan Pizza</td>    
+        <td>3$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="p2" name = "p2"></td>
+        <td>Greek Pizza</td>    
+        <td>3$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="p3" name = "p3"></td>
+        <td>Sicilian Pizza</td>    
+        <td>3$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="p4" name = "p4"></td>
+        <td>Detroit Pizza</td>    
+        <td>4$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="p5" name = "p5"></td>
+        <td>Californian Pizza</td>    
+        <td>4$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="p6" name = "p6"></td>
+        <td>St.Louis Pizza</td>    
+        <td>4$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    
+</table>
+</div>
+</div>
+    
+    
+</table>
+<div class="float">
+    <div class="specialities">
+<table  cellspacing = "10px" cellpadding = "2px"> 
+    <tr>
+        <td class="colored-cell" rowspan="12"><img src="../src/images/specialities.png"><br/>Specialities</td>
+        <td><input type="checkbox" id="sp1" name = "sp1"></td>
+        <td>Sushi</td>    
+        <td>20$<marked>(Price for one)</marked></td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="sp2" name = "sp2"></td>
+        <td>Tacos</td>    
+        <td>7$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="sp3" name = "sp3"></td>
+        <td>Burrito</td>    
+        <td>7$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="sp5" name = "sp5"></td>
+        <td>Beef Steak</td>    
+        <td>25$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="sp6" name = "sp6"></td>
+        <td>Chicken Breast</td>    
+        <td>12$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <td><input type="checkbox" id="sp7" name = "sp7"></td>
+        <td>Chicken Finger</td>    
+        <td>10$<marked>(Price for one)</marked></td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+   </table>
+</div>
+<div class = "salad">
+   <table  cellspacing = "10px" cellpadding = "2px"> 
+    <tr>
+        <td class="colored-cell" rowspan="12"><img src="../src/images/salad.png"><br/>Salad</td>
+        <td><input type="checkbox" id="1" name = "1"></td>
+        <td>Greek Salad</td>    
+        <td>4$<marked>(Price for one)</marked></td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="sa1" name = "sa1"></td>
+        <td>Thai Salad</td>    
+        <td>4$<marked>(Price for one)</marked></td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="sa3" name = "sa3"></td>
+        <td>Asian Salad</td>    
+        <td>4$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="sa3" name = "sa3"></td>
+        <td>Lobster Salad</td>    
+        <td>4$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="sa4" name = "sa4"></td>
+        <td>Tropical Salad</td>    
+        <td>2$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="sa5" name = "sa5"></td>
+        <td>Salmon Salad</td>    
+        <td>2$ (Price for one)</td> 
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+
+       </table>
+    </div>
+</div>
+<div class = "float">
+    <div class = "cake">
+       <table  cellspacing = "10px" cellpadding = "2px"> 
+           <tr>
+            <td  class="colored-cell" rowspan="12"><img src="../src/images/cake.png"><br/>Dessert</td>
+            <td><input type="checkbox" id="c1" name = "c1"></td>
+            <td>Tiramisu</td>    
+            <td>3$<marked>(Price for one)</marked></td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td><input type="number" min="1" max="10"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="c2" name = "c2"></td>
+            <td>Brown Muffins</td>    
+            <td>4$<marked>(Price for one)</marked></td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td>Cherry cream</td>
+            <td>4$</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td><input type="number" min="1" max="10"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="c3" name = "c3"></td>
+            <td>Chessecake</td>    
+            <td>4$ (Price for one)</td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td><input type="number" min="1" max="10"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="c4" name = "c4"></td>
+            <td>Frozen desserts</td>    
+            <td>4 (Price for one)</td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td><input type="number" min="1" max="10"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="c5" name = "c5"></td>
+            <td>Baklava</td>    
+            <td>4$ (Price for one)</td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td><input type="number" min="1" max="10"></td>
+        </tr>
+   
+           </table>
+    </div>
+    <div class = "drink">
+           <table  cellspacing = "10px" cellpadding = "2px"> 
+            <tr>
+                <td  class="colored-cell" rowspan="12"><img src="../src/images/drink.png"><br/>Drinks</td>
+                <td><input type="checkbox" id="d1" name = "d1"></td>
+                <td>Sodas</td>    
+                <td>2$<marked>(Price for one)</marked></td> 
+            </tr>
+            <tr>
+                <td></td>
+                <td>Quantity</td>
+                <td><input type="number" min="1" max="10"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="d2" name = "d2"></td>
+                <td>Cocktails</td>    
+                <td>2$<marked>(Price for one)</marked></td> 
+            </tr>
+            <tr>
+                <td></td>
+                <td>Quantity</td>
+                <td><input type="number" min="1" max="10"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="d3" name = "d3"></td>
+                <td>Watermelon juice</td>    
+                <td>2$ (Price for one)</td> 
+            </tr>
+            <tr>
+                <td></td>
+                <td>Quantity</td>
+                <td><input type="number" min="1" max="10"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="d4" name = "d4"></td>
+                <td>Red Wine</td>    
+                <td>8$ (Price for one)</td> 
+            </tr>
+            <tr>
+                <td></td>
+                <td>Quantity</td>
+                <td><input type="number" min="1" max="10"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="d5" name = "d5"></td>
+                <td>White wine</td>    
+                <td>8$ (Price for one)</td> 
+            </tr>
+            <tr>
+                <td></td>
+                <td>Quantity</td>
+                <td><input type="number" min="1" max="10"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="d6" name = "d6"></td>
+                <td>Water</td>    
+                <td>1$ (Price for one)</td> 
+            </tr>
+            <tr>
+                <td></td>
+                <td>Quantity</td>
+                <td><input type="number" min="1" max="10"></td>
+            </tr>
+               </table>
+    </div>
+</div>
+<div class="payment">
+     <table >
+         <th>Payment method</th>
+         <tr>
+             <td><input type="radio" id="1" name = "pagesa"></td>
+             <td>Cash on delivery/pick-up</td>
+         </tr>
+         <tr>
+            <td><input type="radio" id="creditcard" name = "pagesa" ></td>
+            <td>Credit-Card </td>
+        </tr>
+     </table>
+    </div>
+     <button id = "button" >Finish order</button>
+    </fieldset>
+ </form>
+
+ <footer>
+
+    <div class="upper">
+    <div class = "column-1">
+        <h3>From the Blog</h3>
+         
+         <p class= "green" style="text-align:left;">Christmas Feta</p>
+         <p class="grey" style = "font-size: 13px;"><b id = "admin" >Admin</b>, pwww-gr2</p>
+         <p class="grey" id="date">Thursday, December 13, 2021</p>
+         <p class = "grey">Christmas Feta is here for the holidays! Smooth and creamy whipped feta topped with orange zest, pomegranate seeds, candied nuts, and fresh thyme. It’s basically a delicious ornament in a bowl!</p>
+         <p><a href = "https://pinchofyum.com/christmas-feta" id = "green" >Read more &rsaquo; </a></p>
+
+        
+    </div>
+    <div class = "column-2">
+        <h3>Quick Links</h3>
+        <p><a target = "_blank" href = "https://ncert.nic.in/textbook/pdf/kehe103.pdf" ><b>&rsaquo;</b>Food and nutrition (book)</a></p>
+        <p><a href = "https://pinchofyum.com/"> <b>&rsaquo;</b> Pinch of Yum</a></p>
+        <p><a href = "https://www.seriouseats.com/"> <b>&rsaquo;</b> Serious Eats</a></p>
+        <p><a href = "https://food52.com/"> <b>&rsaquo; </b>Food 52</a></p>
+        <p><a href = "https://www.cannellevanille.com/"> <b>&rsaquo; </b>Cannelle et vanille</a></p>
+        <p><a href = "https://www.browneyedbaker.com/"> <b>&rsaquo;</b> Brown eyed baker</a></p>
+       
+    </div>
+    <div class = "column-3">
+        <h3>Latest tweets</h3>
+
+        <p><i>@EvanKirste</i>   From our point view, this is the best restaurant in town: the best relation between good quality and price. All crew work together, eficiently and very polite.</p>
+        <p><em>@alisstair</em>  A wonderful experience, full of little taste  surprises, bursting with flavour and inventiveness. Perhaps the best meal I've ever eaten. Cannot speak too highly about this "Temple to Food".</p>
+    </div>
+    <div class = "column-4">
+        <h3>Contact us</h3>
+        <form method = "post" action = "" id = "Contact-us-form">
+            
+           <p><input type = "text" id = "fname" name = "fname" placeholder="Full Name"></p> 
+           <p><input type = "email" id = "email" name = "email" placeholder="Email Adress"></p>
+           <p><input type = "text" id = "subject" name = "subject" placeholder="Subject"></p>
+           <p><textarea rows="4" cols="20" name="message" form="Contact-us-form" placeholder="Message"></textarea></p>
+           <p ><input type = "submit" placeholder="Submit" style="background-color: #7cc08d; border: none; color: 
+           rgb(50, 50, 50);"></p>
+        </form>
+    </div>
+</div>
+    <div class="last">
+
+       <div class="left"> 
+           <p style = "padding-left: 120px;">Copyright &copy; 2021 PWWW-GR2 - All rights reserved</p> 
+       </div>
+       <div class="right">
+        <p id="DT"></p>
+    </div>
+
+    </div>
+</footer>
+ 
+</body>
+<script src = "order.js"></script>
+</html>
