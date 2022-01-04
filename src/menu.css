@@ -121,13 +121,14 @@
     object-fit: cover;
 }
 
-.dish .image-container .image a{
+.dish .image-container .image h1{
     font-size: 2rem;
+    font-weight: normal;
     color:#333;
     padding:.5rem;
 }
 
-.dish .image-container .image a:hover{
+.dish .image-container .image h1:hover{
     color:var(--red);
     text-decoration: underline;
 }

@@ -17,6 +17,7 @@ $('.nav-ul .nav-link').click(function () {
   }
   
   function showSlides(n) {
+    //lokale
     var i;
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
