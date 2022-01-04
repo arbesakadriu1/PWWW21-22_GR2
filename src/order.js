@@ -12,7 +12,7 @@ $(document).on("click", "ul li", function () {
   var radiobuton = document.getElementById("creditcard"); 
 
   if(radiobuton.checked){   document.writeln("<p>You should be logged in</p>")
-   window.location.href ="index1.html";   }
+   window.location.href ="login.html";   }
  }
 
 var currentTime = new Date().getHours();
