@@ -83,6 +83,11 @@
     width: 390px;
     height: 390px;
   }
+  .content h1{
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    font-size: 40px;
+  }
   
   .content  p {
       padding-top: 10px;
@@ -93,13 +98,15 @@
   }
 
   .more-button {
-    margin-top: 20px;
+    margin-top: 10px;
+    padding-top: 15px;
+    text-align: center;
     background-color: #76c38f;
     color: #fff;
     height: 50px;
     width: 160px;
     border-radius: 13px;
-    font-size: 15px;
+    font-size: 17px;
   }
   .more-button:hover{
       border:1px solid #76c38f;
@@ -186,7 +193,7 @@
     background-color: white;
     padding: 20px;
     width: 23%;
-    height: 305px; 
+    height: 340px; 
 }
 /* .card-image{
     width: 120px;
@@ -197,8 +204,7 @@
 .card h1{
     font-size: 28px;
     font-weight: 520;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
 } 
 
 
@@ -209,6 +215,6 @@
 
 .card p{
     /* color: rgb(169,169,169); */
-   padding-bottom: 50px;
+   padding-top: 20px;
 }
 
