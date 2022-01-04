@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurant Website</title>
+        <link rel="stylesheet" href="menu.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    
+
+    </head>
+    <body>
+        <header>
+            <!-- Logo ose tekst ose img-->
+            <div class="logo">
+             <label class="big-text">House of Cuisines</label> 
+            </div>
+            <nav class="navbar">
+                <ul class="nav-ul">
+                    <li class=" nav-link"><a href="home.html" id="home" >HOME</a></li>
+                    <li class="nav-link active"><a href="menu.html" >MENU </a></li>
+                    <li class="nav-link"> <a href="#"  >ORDER</a></li>
+                    <li class="nav-link">  <a href="#">ABOUT US</a></li>
+                    <li class="nav-link"><a href="#"> GALLERY</a></li>
+                    <li class="nav-link"> <a href="#">LOG IN/SIGN UP</a></li>
+                </ul>     
+             </nav>
+            
+        </header>
+        <main>
+    
+            <!-- Restaurant Menu-->
+            <section class="dish" id="dish">
+                <h1 class="heading"><span>Our Menu</span></h1>
+                <ul class="controls">
+                    <li class="buttons button-active" data-filter="all">All</li>
+                    <li class="buttons" data-filter="soup">Soups</li>
+                    <li class="buttons" data-filter="pizza">Pizza</li>
+                    <li class="buttons" data-filter="specialties">Our Specialties</li>
+                    <li class="buttons" data-filter="salads">Salads</li>
+                    <li class="buttons" data-filter="desserts">Desserts</li>
+                    <li class="buttons" data-filter="drinks">Drinks</li>
+                </ul>
+
+                <div class="image-container">
+
+                    <!-- soups -->
+                    <div class="image soup">
+                        <img src="/img/soup1.jpg" alt="soup">
+
+                        <div class="dish-container">
+                            <h1>Lentil Soup</h1>
+                            <h2>Price: 2$</h2>
+                        </div>
+
+                    </div>
+                    <div class="image soup">
+                        <img src="/img/soup2.jpg" alt="soup">
+                        <div class="dish-container">
+                            <h1>Tomato Soup</h1>
+                            <h2>Price: 3$</h2>
+                        </div>
+
+                    </div>
+                    <div class="image soup">
+                        <img src="/img/soup3.jpg" alt="soup">
+                        <div class="dish-container">
+                            <h1> Italian Soup</h1>
+                            <h2>Price: 4$</h2>
+                        </div>
+
+                    </div>
+                    <div class="image soup">
+                        <img src="/img/soup4.jpg" alt="soup">
+                        <div class="dish-container">
+                            <h1> Chicken Soup</h1>
+                            <h2>Price: 5$</h2>
+                        </div>
+                    </div>
+
+                    <div class="image soup">
+                        <img src="/img/soup5.jpg" alt="soup">
+                        <div class="dish-container">
+                            <h1>Chinese Soup</h1>
+                            <h2>Price: 6$</h2>
+                        </div>
+                    </div>
+                    <div class="image soup">
+                        <img src="/img/soup6.jpg" alt="soup">
+                        <div class="dish-container">
+                            <h1>Cream Soup</h1>
+                            <h2>Price: 7$</h2>
+                        </div>
+                    </div>
+
+                    <!-- pizza -->
+                    <div class="image pizza">
+                        <img src="/img/pizza1.jpg" alt="pizza">
+                        <div class="dish-container">
+                            <h1>Neapolitan Pizza</h1>
+                            <h2>Price: 3$</h2>
+                        </div>
+                        
+                    </div>
+                    <div class="image pizza" id="greek-pizza">
+                        <img src="/img/pizza2.jpg" alt="pizza">
+                        <div class="dish-container">
+                            <h1>Greek Pizza</h1>
+                            <h2>Price: 3$</h2>
+                        </div>
+                        
+                    </div>
+                    <div class="image pizza">
+                        <img src="/img/pizza3.jpg" alt="pizza">
+                        <div class="dish-container">
+                            <h1>Sicilian Pizza</h1>
+                            <h2>Price: 3$</h2>
+                        </div>
+                    </div>
+                    <div class="image pizza">
+                        <img src="/img/pizza4.png" alt="pizza">
+                        <div class="dish-container">
+                            <h1>Detroit Pizza</h1>
+                            <h2>Price: 4$</h2>
+                        </div>
+                    </div>
+                    <div class="image pizza">
+                        <img src="/img/pizza5.jpg" alt="pizza">
+                        <div class="dish-container">
+                            <h1>Californian Pizza</h1>
+                            <h2>Price: 4$</h2>
+                        </div>
+                    </div>
+                    <div class="image pizza">
+                        <img src="/img/pizza6.jpg" alt="pizza">
+                        <div class="dish-container">
+                            <h1>St. Louis Pizza</h1>
+                            <h2>Price: 4$</h2>
+                        </div>
+                    </div>
+
+                    <!-- Our Specialties -->
+                    <div class="image specialties" id="sushi">
+                        <img src="/img/specialities1.png" alt="specialties"  >
+                        <div class="dish-container">
+                            <h1>Sushi</h1>
+                            <h2>Price: 20$</h2>
+                        </div>                  
+                  </div>
+
+                    <div class="image specialties">
+                        <img src="/img/sp2.jpg" alt="specialties">
+                        <div class="dish-container">
+                            <h1>Tacos</h1>
+                            <h2>Price: 7$</h2>
+                        </div>
+                    </div>
+
+                    <div class="image specialties">
+                        <img src="/img/sp3.jpg" alt="specialties">
+                        <div class="dish-container">
+                            <h1>Burrito</h1>
+                            <h2>Price: 7$</h2>
+                        </div>
+                    </div>
+
+                    <div class="image specialties" id="beef-steak">
+                        <img src="/img/sp4.webp" alt="specialties">
+                        <div class="dish-container">
+                            <h1>Beef Steak</h1>
+                            <h2>Price: 25$</h2>
+                        </div>
+                    </div>
+
+                    <div class="image specialties">
+                        <img src="/img/sp5.jpg" alt="specialties">
+                        <div class="dish-container">
+                            <h1>Chicken Breast</h1>
+                            <h2>Price: 12$</h2>
+                        </div>
+                    </div>
+
+                    <div class="image specialties">
+                        <img src="/img/sp6.jpg" alt="specialties">
+                        <div class="dish-container">
+                            <h1>Chicken Fingers</h1>
+                            <h2>Price: 10$</h2>
+                        </div>
+                    </div>
+                
+
+                    <!-- Salads -->
+                    <div class="image salads">
+                        <img src="/img/salad1.jpg" alt="salads">
+                        <div class="dish-container">
+                            <h1> Greek Salad</h1>
+                            <h2>Price: 4$</h2>
+                        </div>                        
+                    </div>
+                    <div class="image salads" id="thai-salad">
+                        <img src="/img/salad2.png" alt="salads">
+                        <div class="dish-container">
+                            <h1>Thai Salad</h1>
+                            <h2>Price: 4$</h2>
+                        </div>                       
+                    </div>
+                    <div class="image salads">
+                        <img src="/img/salad3.jpg" alt="salads">
+                        <div class="dish-container">
+                            <h1> Asian Salad</h1>
+                            <h2>Price: 4$</h2>
+                        </div>                        
+                    </div>
+                    <div class="image salads">
+                        <img src="/img/salad4.jpg" alt="salads">
+                        <div class="dish-container">
+                            <h1> Lobster Salad</h1>
+                            <h2>Price: 4$</h2>
+                        </div>                      
+                    </div>
+                    <div class="image salads">
+                        <img src="/img/salad5.jpg" alt="salads">
+                        <div class="dish-container">
+                            <h1> Tropical Salads</h1>
+                            <h2>Price: 2$</h2>
+                        </div>
+                        
+                    </div>
+                    <div class="image salads">
+                        <img src="/img/salad6.jpg" alt="salads">
+                        <div class="dish-container">
+                            <h1>Salmon Salads</h1>
+                            <h2>Price: 2$</h2>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Desserts -->
+                    <div class="image desserts">
+                        <img src="/img/d1.jpg" alt="desserts">
+                        <div class="dish-container">
+                            <h1>Tiramisu</h1>
+                            <h2>Price: 3$</h2>
+                        </div>
+                        
+                    </div>
+                    <div class="image desserts">
+                        <img src="/img/d2.jpg" alt="desserts">
+                        <div class="dish-container">
+                            <h1>Brown Muffins</h1>
+                            <h2>Price: 4$</h2>
+                        </div>
+                        
+                    </div>
+                    <div class="image desserts">
+                        <img src="/img/d3.jpg" alt="desserts">
+                        <div class="dish-container">
+                            <h1>Cherry Creams</h1>
+                            <h2>Price: 4$</h2>
+                        </div>
+                        
+                    </div>
+                    <div class="image desserts">
+                        <img src="/img/d4.jpg" alt="desserts">
+                        <div class="dish-container">
+                            <h1>Cheesecakes</h1>
+                            <h2>Price: 4$</h2>
+                        </div>
+                        
+                    </div>
+                    <div class="image desserts">
+                        <img src="/img/d5.jpg" alt="desserts">
+                        <div class="dish-container">
+                            <h1>Frozen desserts</h1>
+                            <h2>Price: 4$</h2>
+                        </div>
+                        
+                    </div>
+                    <div class="image desserts" id="baklava">
+                        <img src="/img/d6.jpg" alt="desserts">
+                        <div class="dish-container">
+                            <h1>Baklava </h1>
+                            <h2>Price: 4$</h2>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Drinks -->
+                    <div class="image drinks">
+                        <img src="/img/dr1.jpg" alt="drinks">
+                        <div class="dish-container">
+                            <h1>Sodas</h1>
+                            <h2>Price: 2$</h2>
+                        </div>
+                        
+                    </div>
+                    <div class="image drinks">
+                        <img src="/img/dr2.jpg" alt="drinks">
+                        <div class="dish-container">
+                            <h1>Coctails</h1>
+                            <h2>Price: 2$</h2>
+                        </div>
+                        
+                    </div>
+                    <div class="image drinks">
+                        <img src="/img/dr3.jpg" alt="drinks">
+                        <div class="dish-container">
+                            <h1>Watermelon Juice</h1>
+                            <h2>Price: 2$</h2>
+                        </div>
+                        
+                    </div>
+                    <div class="image drinks" id="red-wine">
+                        <img src="/img/dr4.jpg" alt="drinks">
+                        <div class="dish-container">
+                            <h1>Red Wine</h1>
+                            <h2>Price: 8$</h2>
+                        </div>
+                        
+                    </div>
+                    <div class="image drinks">
+                        <img src="/img/dr5.jpg" alt="drinks">
+                        <div class="dish-container">
+                            <h1>White Wine</h1>
+                            <h2>Price: 8$</h2>
+                        </div>
+                        
+                    </div>
+                    <div class="image drinks">
+                        <img src="/img/dr6.jpg" alt="drinks">
+                        <div class="dish-container">
+                            <h1>Water</h1>
+                            <h2>Price: 1$</h2>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="order-button">
+                    <a href="booking&reservation.html" class="button" >Order here</a>
+                </div>
+                
+
+            </section>
+            <h1 id="best-seller">Best Seller</h1>
+            <ol class="best-seller">
+                <li class=""><a href="#sushi">Sushi</a></li>
+                <li class=""><a href="#greek-pizza">Greek Pizza</a></li>
+                <li class=""><a href="#beef-steak">Beef Steak</a></li>
+                <li class=""><a href="#thai-salad">Thai Salad</a></li>
+                <li class=""><a href="#baklava">Baklava </a></li>
+                <li class=""><a href="#red-wine">Red-Wine</a></li>
+
+
+
+            </ol>
+        </main>
+        <footer>
+
+            <div class="upper">
+            <div class = "column-1">
+                <h3>From the Blog</h3>
+                 
+                 <p class= "green" style="text-align:left;">Christmas Feta</p>
+                 <p class="grey" style = "font-size: 13px;"><b id = "admin" >Admin</b>, pwww-gr2</p>
+                 <p class="grey" id="date">Thursday, December 13, 2021</p>
+                 <p class = "grey">Christmas Feta is here for the holidays! Smooth and creamy whipped feta topped with orange zest, pomegranate seeds, candied nuts, and fresh thyme. It’s basically a delicious ornament in a bowl!</p>
+                 <p><a href = "https://pinchofyum.com/christmas-feta" id = "green" >Read more &rsaquo; </a></p>
+    
+                
+            </div>
+            <div class = "column-2">
+                <h3>Quick Links</h3>
+                <p><a target = "_blank" href = "https://ncert.nic.in/textbook/pdf/kehe103.pdf" ><b>&rsaquo;</b>Food and nutrition (book)</a></p>
+                <p><a href = "https://pinchofyum.com/"> <b>&rsaquo;</b> Pinch of Yum</a></p>
+                <p><a href = "https://www.seriouseats.com/"> <b>&rsaquo;</b> Serious Eats</a></p>
+                <p><a href = "https://food52.com/"> <b>&rsaquo; </b>Food 52</a></p>
+                <p><a href = "https://www.cannellevanille.com/"> <b>&rsaquo; </b>Cannelle et vanille</a></p>
+                <p><a href = "https://www.browneyedbaker.com/"> <b>&rsaquo;</b> Brown eyed baker</a></p>
+               
+            </div>
+            <div class = "column-3">
+                <h3>Latest tweets</h3>
+    
+                <p><i>@EvanKirste</i>   From our point view, this is the best restaurant in town: the best relation between good quality and price. All crew work together, eficiently and very polite.</p>
+                <p><em>@alisstair</em>  A wonderful experience, full of little taste  surprises, bursting with flavour and inventiveness. Perhaps the best meal I've ever eaten. Cannot speak too highly about this "Temple to Food".</p>
+            </div>
+            <div class = "column-4">
+                <h3>Contact us</h3>
+                <form method = "post" action = "" id = "Contact-us-form">
+                    
+                   <p><input type = "text" id = "fname" name = "fname" placeholder="Full Name"></p> 
+                   <p><input type = "email" id = "email" name = "email" placeholder="Email Adress"></p>
+                   <p><input type = "text" id = "subject" name = "subject" placeholder="Subject"></p>
+                   <p><textarea rows="4" cols="20" name="message" form="Contact-us-form" placeholder="Message"></textarea></p>
+                   <p ><input type = "submit" placeholder="Submit" style="background-color: #7cc08d; border: none; color: 
+                   rgb(50, 50, 50);"></p>
+                </form>
+            </div>
+        </div>
+            <div class="last">
+    
+               <div class="left"> 
+                   <p style = "padding-left: 120px;">Copyright &copy; 2021 PWWW-GR2 - All rights reserved</p> 
+               </div>
+               <div class="right">
+                <p id="DT"></p>
+            </div>
+    
+            </div>
+        </footer>
+
+
+    </body>
+
+    <script  src="menu.js" typee="text/javascript"> </script>
+    <script>
+        document.getElementById("DT").innerHTML = Date();
+     </script>
+</html>
+
