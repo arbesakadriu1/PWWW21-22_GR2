@@ -152,6 +152,31 @@
     cursor: pointer;
 
 }
+.order-button{
+  padding:70px;
+  margin-left: 777px;
+
+}
+.order-button .button{
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 23px;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 13px;
+  padding: 20px 30px;
+  color: white;
+  background-size: 300% 300%;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  background-image: linear-gradient(to right, #b12626 0%, #ffabf4 50%, #895cf2 100%);  transition: 0.5s;
+}
+
+ .order-button  .button:hover{
+  background-position: right center;
+
+}
 
 /* .dish-container h2:hover{
     
